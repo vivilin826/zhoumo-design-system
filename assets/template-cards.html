@@ -10,14 +10,14 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-:root { --pinky-hair: #D99684; --pinky-dress: #4E86C5; --pinky-earring: #AABF58; --_esther-ds: "esthersjw-v1";
+:root { --_esther-ds: "esthersjw-v1";
   --yellow: #F6C55F;
-  --yellow-soft: #FFF7E8;
-  --blue: #183A70;
+  --yellow-soft: #FFF1D4;
+  --blue: #4E86C5;
   --blue-deep: #183A70;
   --red: #F15A43;
   --cream: #FFF7E8;
-  --cream-dark: #FFF7E8;
+  --cream-dark: #FFF3DE;
   --ink: #183A70;
   --ink-light: #4A4A5A;
   --ink-faint: #8A8A9A;
@@ -57,7 +57,7 @@ body {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
-.export-bar button:hover { background: #183A70; }
+.export-bar button:hover { background: #3D71AD; }
 
 .export-bar .hint {
   color: #aaa;
@@ -358,11 +358,6 @@ body {
   color: var(--ink-light);
   letter-spacing: 2px;
 }
-/* Pinky：重点页也保留浅色底，深蓝仅作文字和结构。 */
-.p-dark { background: var(--cream); color: var(--ink); }
-.p-dark h2, .p-dark .item .text, .p-dark .item .text strong { color: var(--ink); }
-.p-dark .sub { color: var(--red); }
-.p-dark .deco-line { background: var(--yellow); }
 </style>
 </head>
 <body>
@@ -382,7 +377,7 @@ body {
   <h1><!-- 主标题，72-96px --><span class="highlight"><!-- 高亮关键词 --></span></h1>
   <p class="subtitle"><!-- 副标题/一句话说明 --></p>
   <div class="author-row">
-    <!-- 此处按需放入已确认的 Pinky 独立头像 pinky-avatar.png；不要使用原作者头像或把人物标准图整张当头像。 -->
+    <img class="avatar" src="pinky-avatar.png" alt="avatar">
     <div>
       <div class="author-name">粥沫</div>
       <div class="author-desc"><!-- 你的一句话介绍 --></div>
@@ -390,8 +385,8 @@ body {
   </div>
 </div>
 
-<!-- ===== P2 浅色重点页示例 ===== -->
-<!-- 适合代码、文件树、核心要点强调。奶油白底+午夜蓝文字。 -->
+<!-- ===== P2 深色面板页示例 ===== -->
+<!-- 适合代码、文件树、核心要点强调。深色底+亮色文字。 -->
 <div class="card p-dark" data-card="2">
   <span class="page-num">02</span>
   <h2><!-- 页面标题 --></h2>
@@ -427,7 +422,7 @@ body {
   <div class="deco-bottom"></div>
   <div class="quote-mark">"</div>
   <p class="quote"><!-- 金句/核心观点 --><span class="highlight"><!-- 高亮关键词 --></span></p>
-  <!-- 此处按需放入已确认的 Pinky 独立头像 pinky-avatar.png；不要使用原作者头像或把人物标准图整张当头像。 -->
+  <img class="avatar" src="pinky-avatar.png" alt="avatar">
   <p class="author-name">粥沫</p>
   <p class="cta"><!-- 关注 + 你的名字，或你的固定CTA短语 --></p>
   <p class="tagline"><!-- 签名档第一行 --><br><!-- 签名档第二行 --></p>

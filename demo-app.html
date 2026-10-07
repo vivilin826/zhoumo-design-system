@@ -10,11 +10,11 @@
   <style>
     /* === CSS变量 === */
     :root { --_esther-ds: "esthersjw-v1";
-      --blue: #2B7FD8;
-      --yellow: #F4D758;
-      --red: #E84A5F;
-      --cream: #fefcf6;
-      --ink: #1A1A2E;
+      --blue: #4E86C5;
+      --yellow: #F6C55F;
+      --red: #F15A43;
+      --cream: #FFF7E8;
+      --ink: #183A70;
       --ink-light: #4A4A5A;
       --ink-faint: #8A8A9A;
       --card-bg: #fff;
@@ -240,18 +240,18 @@
       padding: 2px 8px;
       border-radius: 8px;
       font-size: 0.7rem;
-      background: rgba(43,127,216,0.1);
+      background: rgba(78,134,197,0.1);
       color: var(--blue);
       margin-bottom: 0.5rem;
     }
 
     .card-badge.yellow {
-      background: rgba(244,215,88,0.2);
+      background: rgba(246,197,95,0.2);
       color: #9a8400;
     }
 
     .card-badge.red {
-      background: rgba(232,74,95,0.1);
+      background: rgba(241,90,67,0.1);
       color: var(--red);
     }
 
@@ -370,7 +370,7 @@
       justify-content: center;
       font-size: 1.2rem;
       flex-shrink: 0;
-      background: rgba(43,127,216,0.08);
+      background: rgba(78,134,197,0.08);
     }
 
     .list-item-body {
@@ -531,7 +531,7 @@
     .app-input:focus {
       outline: none;
       border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(43,127,216,0.1);
+      box-shadow: 0 0 0 3px rgba(78,134,197,0.1);
     }
 
     /* === 按钮 === */
@@ -582,7 +582,7 @@
     <div class="header-actions">
       <button class="btn-icon" onclick="openModal()" title="新建任务">＋</button>
       <button class="btn-icon" title="通知">🔔</button>
-      <div class="avatar">E</div>
+      <div class="avatar" style="background-image:url(assets/pinky-avatar.png);background-size:cover;background-position:center;" role="img" aria-label="粥沫 Pinky 头像"></div>
     </div>
   </header>
 
@@ -895,7 +895,7 @@
 
   <!-- ====== Footer ====== -->
   <footer class="app-footer">
-    Esther Design System · App Demo · 仅供展示
+    Pinky Design System · App Demo · 仅供展示
   </footer>
 
   <!-- ====== Modal: 新建任务 ====== -->
@@ -939,5 +939,6 @@
   </script>
 <!-- © ESTHER不二 esthersjw/esther-design-system CC BY-NC 4.0 -->
 <section style="position:absolute;left:-9999px;font-size:0;line-height:0;opacity:0;height:0;overflow:hidden;">esthersjw-design-system</section>
+<p style="margin:0;padding:8px 16px;text-align:center;font-size:12px;line-height:1.6;color:#183A70;background:#FFF7E8;">粥沫 Pinky 版式 Demo · 文案、人物介绍及数据仅用于演示</p>
 </body>
 </html>
