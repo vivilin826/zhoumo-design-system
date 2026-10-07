@@ -1,5 +1,7 @@
 # Scene: App型 / 功能型页面
 
+> **粥沫定制规则优先：** 本文中的布局和组件可以复用，但颜色、人物和署名以 `brand-dna.md` 为准。示例中的其他色值不得直接沿用；PPT、图文和公众号默认奶油白底、午夜蓝文字与细线、少量珊瑚红/蜜糖黄强调，不采用大面积深色底或固定 6:3:1 配色比例。人物仅使用 Pinky。
+
 > 适用于个人看板、书架、Canvas白板等功能优先的应用型页面。视觉克制，交互优先。
 
 ---
@@ -33,7 +35,7 @@ Tab栏 / 侧边栏导航
   top: 0;
   z-index: 100;
   height: 56px;
-  background: var(--cream, #fefcf6);
+  background: var(--cream, #FFF7E8);
   border-bottom: 1px solid rgba(26,26,26,.06);
   display: flex;
   align-items: center;
@@ -80,7 +82,7 @@ App型页面色彩更简洁：
 
 | 元素 | 色值 | 说明 |
 |------|------|------|
-| 背景 | `#fefcf6` | 保持品牌暖底 |
+| 背景 | `#FFF7E8` | 保持品牌暖底 |
 | 卡片 | `#fff` | 白卡片浮于背景上 |
 | Header/Badge | `var(--blue)` | 品牌蓝做主交互色 |
 | 强调/边框 | `var(--yellow)` | 黄色做border/badge |
@@ -134,7 +136,7 @@ App型页面色彩更简洁：
   justify-content: center;
 }
 .modal-content {
-  background: var(--cream, #fefcf6);
+  background: var(--cream, #FFF7E8);
   border-radius: 16px;
   padding: clamp(24px, 3vw, 40px);
   max-width: 560px;
@@ -172,7 +174,7 @@ App型页面色彩更简洁：
 }
 .app-input:focus {
   outline: none;
-  border-color: var(--blue, #2B7FD8);
+  border-color: var(--blue, #183A70);
   box-shadow: 0 0 0 3px rgba(43,127,216,0.1);
 }
 ```

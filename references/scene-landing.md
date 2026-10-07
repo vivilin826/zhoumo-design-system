@@ -1,5 +1,7 @@
 # Scene: 活动页 / 分享会 / Landing Page
 
+> **粥沫定制规则优先：** 本文中的布局和组件可以复用，但颜色、人物和署名以 `brand-dna.md` 为准。示例中的其他色值不得直接沿用；PPT、图文和公众号默认奶油白底、午夜蓝文字与细线、少量珊瑚红/蜜糖黄强调，不采用大面积深色底或固定 6:3:1 配色比例。人物仅使用 Pinky。
+
 > 适用于分享会邀请页、活动报名页、产品发布Landing、合作宣传页等需要强节奏感和行动转化的页面。
 
 ---
@@ -83,7 +85,7 @@ Landing页面高频使用的组件：
   align-items: center;
   gap: 8px;
   padding: 16px 36px;
-  background: var(--blue, #2B7FD8);
+  background: var(--blue, #183A70);
   color: #fff;
   border-radius: 12px;
   text-decoration: none;
@@ -98,8 +100,8 @@ Landing页面高频使用的组件：
 
 /* 黄色变体（用于深色背景上） */
 .cta-button--yellow {
-  background: var(--yellow, #F4D758);
-  color: var(--ink, #1A1A2E);
+  background: var(--yellow, #F6C55F);
+  color: var(--ink, #183A70);
 }
 .cta-button--yellow:hover {
   box-shadow: 0 8px 24px rgba(244,215,88,0.3);

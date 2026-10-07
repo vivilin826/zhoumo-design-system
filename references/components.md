@@ -1,5 +1,7 @@
 # 组件库
 
+> **粥沫定制规则优先：** 本文中的布局和组件可以复用，但颜色、人物和署名以 `brand-dna.md` 为准。示例中的其他色值不得直接沿用；PPT、图文和公众号默认奶油白底、午夜蓝文字与细线、少量珊瑚红/蜜糖黄强调，不采用大面积深色底或固定 6:3:1 配色比例。人物仅使用 Pinky。
+
 > 51个经过验证的可复用组件。直接复制代码使用。
 
 ## 📌 场景索引（先查这里，再去找具体代码）
@@ -468,7 +470,7 @@
   font-family: 'Fraunces', serif;
   font-style: italic;
   font-size: clamp(1.4rem, 3vw, 2rem);
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   opacity: 0.3;
   display: block;
   margin-bottom: 0.25rem;
@@ -477,7 +479,7 @@
   font-family: 'Noto Serif SC', serif;
   font-weight: 900;
   font-size: clamp(1.4rem, 3vw, 2.2rem);
-  color: var(--ink, #1A1A2E);
+  color: var(--ink, #183A70);
 }
 ```
 
@@ -510,7 +512,7 @@
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 2;
-  color: var(--ink, #1A1A2E);
+  color: var(--ink, #183A70);
   margin-bottom: 2rem;
 }
 .quote-minimal .quote-body .hl {
@@ -520,14 +522,14 @@
 .quote-minimal .quote-rule {
   width: 60px;
   height: 3px;
-  background: var(--yellow, #F4D758);
+  background: var(--yellow, #F6C55F);
   margin-bottom: 2rem;
 }
 .quote-minimal .quote-conclusion {
   font-family: 'Noto Serif SC', serif;
   font-size: 1.2rem;
   font-weight: 900;
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   line-height: 1.7;
 }
 ```
@@ -557,8 +559,8 @@
   left: 20px;
   font-family: 'Caveat', cursive;
   font-size: 1rem;
-  color: var(--blue, #2B7FD8);
-  background: var(--cream, #fefcf6);
+  color: var(--blue, #183A70);
+  background: var(--cream, #FFF7E8);
   padding: 0 8px;
   font-weight: 700;
 }
@@ -594,13 +596,13 @@
   transform: translateY(-50%);
   width: 3px;
   height: 60%;
-  background: var(--yellow, #F4D758);
+  background: var(--yellow, #F6C55F);
   border-radius: 2px;
 }
 .quote-typo p {
   font-size: 1rem;
   line-height: 1.85;
-  color: var(--ink, #1A1A2E);
+  color: var(--ink, #183A70);
   font-weight: 500;
   font-style: italic;
 }
@@ -903,16 +905,16 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 ```css
 .viral-pullquote {
   padding: 36px 40px;
-  background: var(--cream, #fefcf6);
+  background: var(--cream, #FFF7E8);
   border-radius: 16px;
-  border: 2px solid var(--yellow, #F4D758);
+  border: 2px solid var(--yellow, #F6C55F);
   position: relative;
 }
 .viral-pullquote::before {
   content: '"';
   font-family: 'Fraunces', serif;
   font-size: 5rem;
-  color: var(--yellow, #F4D758);
+  color: var(--yellow, #F6C55F);
   position: absolute;
   top: -10px; left: 20px;
   opacity: 0.5;
@@ -958,14 +960,14 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   line-height: 1.6;
 }
 .chat-bubble.user {
-  background: var(--yellow, #F4D758);
-  color: var(--ink, #1A1A2E);
+  background: var(--yellow, #F6C55F);
+  color: var(--ink, #183A70);
   align-self: flex-end;
   border-bottom-right-radius: 4px;
 }
 .chat-bubble.ai {
-  background: var(--blue, #2B7FD8);
-  color: #fefcf6;
+  background: var(--blue, #183A70);
+  color: #FFF7E8;
   align-self: flex-start;
   border-bottom-left-radius: 4px;
 }
@@ -993,7 +995,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   font-family: 'Fraunces', serif;
   font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 900;
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   opacity: 0.15;
   line-height: 0.85;
   display: block;
@@ -1048,7 +1050,7 @@ nav.scrolled {
 }
 .nav-links a {
   text-decoration: none;
-  color: var(--ink, #1A1A2E);
+  color: var(--ink, #183A70);
   font-size: 0.85rem;
   position: relative;
 }
@@ -1057,7 +1059,7 @@ nav.scrolled {
   position: absolute;
   bottom: -4px; left: 0; right: 0;
   height: 2px;
-  background: var(--yellow, #F4D758);
+  background: var(--yellow, #F6C55F);
   transform: scaleX(0);
   transition: transform .25s ease-out;
 }
@@ -1424,7 +1426,7 @@ nav.scrolled {
   align-items: center;
   gap: 12px;
   padding: 24px 32px;
-  background: var(--cream, #fefcf6);
+  background: var(--cream, #FFF7E8);
   border-radius: 14px;
   border: 1px solid rgba(43, 127, 216, 0.1);
 }
@@ -1436,7 +1438,7 @@ nav.scrolled {
   box-shadow: 0 2px 8px rgba(0,0,0,.04);
 }
 .flow-arrow {
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   font-size: 1.2rem;
   background: transparent !important;
   box-shadow: none !important;
@@ -1764,7 +1766,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 <div class="hero-cluster">
   <div class="ring"></div>
   <div class="avatar-glow"></div>
-  <img class="avatar-img" src="avatar.jpg" alt="">
+  <img class="avatar-img" src="pinky-avatar.png" alt="">
   <span class="orbit-item" style="top:0;right:10%">标签1</span>
   <span class="orbit-item" style="bottom:10%;left:0">标签2</span>
 </div>
@@ -1838,7 +1840,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 }
 .filter-tag.active {
   color: #fff;
-  background: var(--blue, #2B7FD8);
+  background: var(--blue, #183A70);
 }
 .filter-tag:hover:not(.active) {
   background: rgba(0,0,0,.1);
@@ -1885,11 +1887,11 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   border-radius: 12px;
   font-size: 0.7rem;
   background: rgba(43,127,216,0.1);
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   margin-bottom: 0.75rem;
 }
 .verdict {
-  border-left: 3px solid var(--blue, #2B7FD8);
+  border-left: 3px solid var(--blue, #183A70);
   padding-left: 12px;
   font-size: 0.85rem;
   color: var(--ink-light, #4A4A5A);
@@ -1900,7 +1902,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   padding: 2px 8px;
   border-radius: 8px;
   font-size: 0.7rem;
-  background: var(--cream-dark, #faf6eb);
+  background: var(--cream-dark, #FFF7E8);
 }
 ```
 
@@ -1954,7 +1956,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   margin: 0 auto;
 }
 .book-section {
-  background: var(--cream, #fefcf6);
+  background: var(--cream, #FFF7E8);
   padding: 48px 44px;
   margin-bottom: 2px;
   border-radius: 16px;
@@ -2022,7 +2024,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   align-items: center;
   gap: 8px;
   padding: 14px 32px;
-  background: var(--blue, #2B7FD8);
+  background: var(--blue, #183A70);
   color: #fff;
   border-radius: 12px;
   text-decoration: none;
@@ -2081,14 +2083,14 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 ```css
 /* 杂志Editorial对比 */
 .section-editorial {
-  background: #faf6eb;
+  background: #FFF7E8;
   padding: clamp(80px, 12vh, 160px) 0;
 }
 .section-editorial .section-number {
   font-family: 'Fraunces', serif;
   font-style: italic;
   font-size: clamp(1.4rem, 3vw, 2rem);
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   opacity: 0.3;
   display: block;
   margin-bottom: 0.25rem;
@@ -2097,7 +2099,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-family: 'Noto Serif SC', serif;
   font-weight: 900;
   font-size: clamp(1.4rem, 3vw, 2.2rem);
-  color: var(--ink, #1A1A2E);
+  color: var(--ink, #183A70);
 }
 .editorial-layout {
   display: grid;
@@ -2113,7 +2115,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-family: 'Fraunces', serif;
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 900;
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   opacity: 0.1;
   line-height: 0.85;
   display: block;
@@ -2141,7 +2143,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-family: 'Fraunces', serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--yellow, #F4D758);
+  color: var(--yellow, #F6C55F);
   line-height: 1;
 }
 .editorial-col h4 {
@@ -2153,7 +2155,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 }
 .editorial-col p {
   font-size: 0.95rem;
-  color: var(--ink, #1A1A2E);
+  color: var(--ink, #183A70);
 }
 .editorial-dim {
   font-family: 'Caveat', cursive;
@@ -2231,13 +2233,13 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--yellow, #F4D758);
+  background: var(--yellow, #F6C55F);
 }
-.dot-row:nth-child(2n) .dot-dim::before { background: var(--blue, #2B7FD8); }
-.dot-row:nth-child(3n) .dot-dim::before { background: var(--red, #E84A5F); }
+.dot-row:nth-child(2n) .dot-dim::before { background: var(--blue, #183A70); }
+.dot-row:nth-child(3n) .dot-dim::before { background: var(--red, #F15A43); }
 .dot-val {
   font-size: 0.9rem;
-  color: var(--ink, #1A1A2E);
+  color: var(--ink, #183A70);
 }
 
 @media (max-width: 640px) {
@@ -2299,7 +2301,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 
 ```css
 .ticket-vintage {
-  background: #faf6eb;
+  background: #FFF7E8;
   border: 2px dashed #c4b89a;
   border-radius: 4px;
   padding: 0;
@@ -2344,8 +2346,8 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   color: #4A4A5A;
 }
 .ticket-vintage .airline-row .badge {
-  background: var(--blue, #2B7FD8);
-  color: #fefcf6;
+  background: var(--blue, #183A70);
+  color: #FFF7E8;
   padding: 2px 8px;
   font-size: 0.65rem;
   font-weight: 600;
@@ -2359,7 +2361,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-family: 'Fira Code', monospace;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 600;
-  color: #1A1A2E;
+  color: #183A70;
 }
 .ticket-vintage .city-name {
   font-size: 0.7rem;
@@ -2380,7 +2382,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   position: absolute;
 }
 .ticket-vintage .route-arrow span {
-  background: #faf6eb;
+  background: #FFF7E8;
   padding: 0 8px;
   position: relative;
   font-family: 'Fira Code', monospace;
@@ -2407,7 +2409,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 .ticket-vintage .detail-item span {
   font-family: 'Fira Code', monospace;
   font-size: 0.78rem;
-  color: #1A1A2E;
+  color: #183A70;
 }
 .ticket-vintage .stub-section .stub-date {
   font-family: 'Fira Code', monospace;
@@ -2418,7 +2420,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-family: 'Fira Code', monospace;
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--red, #E84A5F);
+  color: var(--red, #F15A43);
 }
 ```
 
@@ -2455,8 +2457,8 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 
 ```css
 .ticket-editorial {
-  background: #fefcf6;
-  border-top: 3px solid #1A1A2E;
+  background: #FFF7E8;
+  border-top: 3px solid #183A70;
   border-bottom: 1px solid #e8e4dc;
   padding: clamp(28px, 4vw, 48px) clamp(20px, 3vw, 36px);
 }
@@ -2490,12 +2492,12 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-size: clamp(3.5rem, 10vw, 6rem);
   font-weight: 900;
   line-height: 0.9;
-  color: #1A1A2E;
+  color: #183A70;
 }
 .ticket-editorial .time-divider {
   font-family: 'Fraunces', serif;
   font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--yellow, #F4D758);
+  color: var(--yellow, #F6C55F);
   font-weight: 300;
 }
 .ticket-editorial .cities-line {
@@ -2508,7 +2510,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-family: 'Noto Serif SC', serif;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 700;
-  color: #1A1A2E;
+  color: #183A70;
 }
 .ticket-editorial .city-editorial .airport {
   font-family: 'Noto Sans SC', sans-serif;
@@ -2518,7 +2520,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   margin-left: 6px;
 }
 .ticket-editorial .arrow-editorial {
-  color: var(--blue, #2B7FD8);
+  color: var(--blue, #183A70);
   font-size: 1.2rem;
 }
 .ticket-editorial .meta-strip {
@@ -2543,7 +2545,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   font-family: 'Fraunces', serif;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #1A1A2E;
+  color: #183A70;
 }
 ```
 
@@ -2583,9 +2585,9 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 
 ```css
 .ticket-minimal {
-  background: #fefcf6;
+  background: #FFF7E8;
   border: 1px solid #e8e4dc;
-  border-left: 4px solid #1A1A2E;
+  border-left: 4px solid #183A70;
   padding: clamp(20px, 3vw, 32px);
 }
 .ticket-minimal .min-header {
@@ -2603,7 +2605,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--red, #E84A5F);
+  background: var(--red, #F15A43);
 }
 .ticket-minimal .min-route {
   display: flex;
@@ -2614,7 +2616,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 .ticket-minimal .min-point .time {
   font-size: clamp(1.4rem, 3.5vw, 1.8rem);
   font-weight: 700;
-  color: #1A1A2E;
+  color: #183A70;
   line-height: 1;
 }
 .ticket-minimal .min-point .code {
@@ -2631,7 +2633,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
 .ticket-minimal .min-connector .line {
   width: 100%;
   height: 1px;
-  background: #1A1A2E;
+  background: #183A70;
   position: relative;
 }
 .ticket-minimal .min-connector .line::after {
@@ -2640,7 +2642,7 @@ Caveat字体标题 + 虚线边框，适合轻松/教程类内容。
   right: -1px;
   top: -3px;
   width: 0; height: 0;
-  border-left: 5px solid #1A1A2E;
+  border-left: 5px solid #183A70;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
 }
@@ -3022,7 +3024,7 @@ CSS Grid两栏布局、2px粗边框系统、酒店名跨列、日期蓝色大字
 }
 .news-handwrite {
   font-family: 'Caveat', cursive;
-  color: var(--red, #E84A5F);
+  color: var(--red, #F15A43);
   font-size: 1.3rem;
   transform: rotate(-2deg);
   margin-top: 12px;
@@ -3167,7 +3169,7 @@ CSS Grid两栏布局、2px粗边框系统、酒店名跨列、日期蓝色大字
   height: 1.2em;
 }
 .type-warn {
-  color: var(--red, #E84A5F);
+  color: var(--red, #F15A43);
   font-weight: 700;
 }
 .type-cursor {
@@ -4004,7 +4006,7 @@ Your second line — keep it short
 
 ```html
 <!-- data-sparkle-colors 为品牌色硬编码，品牌色如有修改需同步替换 -->
-<div class="sparkles-wrap" data-sparkle-colors="#F4D758,#F4D758,#E84A5F">
+<div class="sparkles-wrap" data-sparkle-colors="#F6C55F,#F6C55F,#F15A43">
   <span class="sparkles-text">Build</span>
 </div>
 ```
@@ -4174,7 +4176,7 @@ document.querySelectorAll('[data-sparkle-colors]').forEach(el => {
   border: none; transition: all 0.2s;
 }
 .cool-btn-blue { background: var(--blue); color: #fff; }
-.cool-btn-blue:hover { background: #1E5BA8; transform: translateY(-2px); }
+.cool-btn-blue:hover { background: #183A70; transform: translateY(-2px); }
 .cool-btn-yellow { background: var(--yellow); color: var(--ink); }
 .cool-btn-yellow:hover { background: #e6c840; transform: translateY(-2px); }
 .cool-btn-outline { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
@@ -4190,7 +4192,7 @@ document.querySelectorAll('[data-sparkle-colors]').forEach(el => {
 // Cool Mode粒子效果
 (function() {
   // 粒子颜色为品牌色硬编码，品牌色如有修改需同步替换
-  const colors = ['#2B7FD8','#2B7FD8','#F4D758','#F4D758','#F4D758','#E84A5F'];
+  const colors = ['#183A70','#183A70','#F6C55F','#F6C55F','#F6C55F','#F15A43'];
   const sizes = [12,16,20,28,36];
   let particles = [], container, animating = false;
   function getContainer() {

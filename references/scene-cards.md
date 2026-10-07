@@ -1,5 +1,7 @@
 # Scene: 小红书图文卡片（3:4）
 
+> **粥沫定制规则优先：** 本文中的布局和组件可以复用，但颜色、人物和署名以 `brand-dna.md` 为准。示例中的其他色值不得直接沿用；PPT、图文和公众号默认奶油白底、午夜蓝文字与细线、少量珊瑚红/蜜糖黄强调，不采用大面积深色底或固定 6:3:1 配色比例。人物仅使用 Pinky。
+
 > 适用于将文章、教程、观点拆解为小红书图文卡片。单个HTML文件包含所有卡片，支持一键导出PNG。
 
 ---
@@ -60,11 +62,11 @@
 ## 🧩 卡片结构模板
 
 ### P1 封面
-- 大标题（84px）用汇文明朝体（Huiwen Mincho），关键词用蓝色高亮块（`background: #2B7FD8; color: #fff; padding: 4px 16px; border-radius: 6px`）
+- 大标题（84px）用汇文明朝体（Huiwen Mincho），关键词用蓝色高亮块（`background: #183A70; color: #fff; padding: 4px 16px; border-radius: 6px`）
 - 副标题（44px）一行显示，紧跟标题下方，`white-space: nowrap`
-- 圆形头像（`avatar.jpg`，120px，`border: 4px solid #F4D758`）
+- 圆形头像（`pinky-avatar.png`，120px，`border: 4px solid #F6C55F`）
 - 署名（作者名）44px + 介绍34px
-- 整体边框：`border: 28px solid #F4D758`
+- 整体边框：`border: 28px solid #F6C55F`
 - 背景加浅色网格质感（`background-image: linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px); background-size: 40px 40px`）
 - 中间留白区域给用户放效果图/截图
 
@@ -88,9 +90,9 @@
 
 | 手法 | 适用场景 | 要点 |
 |------|----------|------|
-| 深色面板 | 代码、文件树、重点强调 | 暗色背景(#1A1A2E)+亮色文字，圆角16px |
+| 深色面板 | 代码、文件树、重点强调 | 暗色背景(#183A70)+亮色文字，圆角16px |
 | oversized编号 | 步骤/流程展示 | 极大(64-120px)极淡色(opacity 0.12)做背景装饰 |
-| 色块交替行 | 对比/表格 | 暖底行(#faf6eb) vs 白底行(#fff) 交替 |
+| 色块交替行 | 对比/表格 | 暖底行(#FFF7E8) vs 白底行(#fff) 交替 |
 | 大箭头流程 | 步骤连接 | 蓝色箭头(48px)连接流程块 |
 | 代码面板 | 代码/文件树/命令 | 深色底+Fira Code+三色圆点title bar |
 | 金句装饰 | 核心观点/结尾 | oversized引号+白底圆角卡片 |
@@ -102,10 +104,10 @@
 ## 🏷️ 品牌规范引用
 
 - 所有颜色、字体、禁忌遵守 `brand-dna.md`
-- 头像源文件：`assets/avatar.jpg`（HTML内用相对路径 `avatar.jpg` 引用，交付时复制到输出HTML同目录）
+- 独立头像素材尚未配置；用户确认后放入 `assets/pinky-avatar.png`，暂无时保留位置，不用原作者头像。头像源文件：`assets/pinky-avatar.png`（HTML内用相对路径 `pinky-avatar.png` 引用，交付时复制到输出HTML同目录）
 - 署名固定为你在 `template-cards.html` 中配置的作者名（模板内为占位符，使用前替换）
-- 品牌三色比例：主色6 : 强调3 : 点缀1
-- 背景主色：奶白 `#fefcf6` / 深奶 `#faf6eb`，深色面板用 `#1A1A2E`
+- 色彩占比：奶油白为主，午夜蓝结构与文字，暖色小面积强调
+- 背景主色：奶白 `#FFF7E8` / 深奶 `#FFF7E8`，深色面板用 `#183A70`
 
 ---
 
@@ -126,7 +128,7 @@
 - [ ] 是否有丑的默认组件（竖线列表、红圆点、默认blockquote）
 - [ ] 每页是否撑满画面（内容占满1080×1440，有呼吸感但不留大片空白）
 - [ ] 页面之间排版是否有变化（不能连续3页同一layout）
-- [ ] 品牌三色比例 6:3:1
+- [ ] 色彩占比以奶油白留白为主，暖色强调克制
 - [ ] 头像和署名是否正确（圆形头像+作者名）
 - [ ] 导出按钮是否工作（html2canvas本地文件 + JSZip CDN、exportAll打包zip一次性下载）
 - [ ] 卡片是否居中显示（transform-origin: top center）

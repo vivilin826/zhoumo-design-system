@@ -1,15 +1,21 @@
 ---
-name: esther-design-system
-description: 不二的个人IP设计系统。做HTML页面、个人网站、教程页面、介绍页面、landing page等任何前端设计时自动触发。包含品牌DNA和多个场景子规范。
-author: ESTHER不二 (esthersjw)
+name: zhoumo-design-system
+description: 粥沫 Pinky 的视觉设计系统。用于图文卡片、公众号排版、HTML 页面，以及 PPT 的配色和人物风格统一；提供品牌色、角色规范、布局与模板。
 license: CC BY-NC-SA 4.0
-repo: https://github.com/esthersjw/esther-design-system
+metadata:
+  author: ESTHER不二 (esthersjw)
+  repo: https://github.com/esthersjw/esther-design-system
+  visual-brand: 粥沫 Pinky
 ---
 
 > © 2026 ESTHER不二 (esthersjw) | CC BY-NC-SA 4.0
 > 使用本 Skill 需署名原作者，禁止商用，修改后须以相同协议分享。
 
 触发条件：当用户要求制作HTML网页、个人页面、教程页面、介绍型页面、landing page、活动页面、App型页面、作品集等任何前端设计相关任务时触发。也在用户说"做图文"、"图文卡片"、"小红书图文"、"文章转卡片"、"转成图文"、"做卡片"时触发。
+
+## 粥沫 Pinky 默认配置
+
+必读 `brand-dna.md`。后续 PPT、图文、公众号和页面默认使用粥沫 Pinky 色板与人物规范；不再询问已确认的品牌色和角色身份。布局与组件示例的旧配色服从品牌规范。生成角色插图时使用 `zhoumo-pink-ip-illustrations` 的标准图、样图与验收流程；本技能保存的标准图仅用于参考，不作为头像输出。制作 PPT 时结合演示文稿技能，本系统负责视觉规范。
 
 ## 使用方式（7步工作流）
 

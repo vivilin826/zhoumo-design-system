@@ -1,5 +1,7 @@
 # Scene: 介绍型 / 教程型 / 科普型页面
 
+> **粥沫定制规则优先：** 本文中的布局和组件可以复用，但颜色、人物和署名以 `brand-dna.md` 为准。示例中的其他色值不得直接沿用；PPT、图文和公众号默认奶油白底、午夜蓝文字与细线、少量珊瑚红/蜜糖黄强调，不采用大面积深色底或固定 6:3:1 配色比例。人物仅使用 Pinky。
+
 > 基于 GitHub入门 V5 提炼的设计语言。适用于所有单页HTML科普、教程、功能介绍、概念解释类页面。
 
 ---
@@ -8,14 +10,14 @@
 
 | 用途 | 变量名 | 色值 | 说明 |
 |------|--------|------|------|
-| 主黄 | `--yellow` | `#F4D758` | 强调、装饰圆圈、连接线、badges |
-| 柔黄 | `--yellow-soft` | `#FFF3CD` | 背景块、气泡底色 |
-| 主蓝 | `--blue` | `#2B7FD8` | 英文标题、超链、重点标记 |
-| 深蓝 | `--blue-deep` | `#1E5BA8` | 大装饰字、section数字编号 |
-| 红色 | `--red` | `#E84A5F` | 点缀、高亮下划线、标签 |
-| 奶白底 | `--cream` | `#fefcf6` | 页面主背景 |
-| 深奶底 | `--cream-dark` | `#faf6eb` | section间交替背景 |
-| 墨色 | `--ink` | `#1A1A2E` | 正文主色（非纯黑） |
+| 主黄 | `--yellow` | `#F6C55F` | 强调、装饰圆圈、连接线、badges |
+| 柔黄 | `--yellow-soft` | `#FFF7E8` | 背景块、气泡底色 |
+| 主蓝 | `--blue` | `#183A70` | 英文标题、超链、重点标记 |
+| 深蓝 | `--blue-deep` | `#183A70` | 大装饰字、section数字编号 |
+| 红色 | `--red` | `#F15A43` | 点缀、高亮下划线、标签 |
+| 奶白底 | `--cream` | `#FFF7E8` | 页面主背景 |
+| 深奶底 | `--cream-dark` | `#FFF7E8` | section间交替背景 |
+| 墨色 | `--ink` | `#183A70` | 正文主色（非纯黑） |
 | 浅墨 | `--ink-light` | `#4A4A5A` | 次要正文 |
 | 淡墨 | `--ink-faint` | `#8A8A9A` | 辅助文字、标签 |
 
@@ -186,7 +188,7 @@
 - `unobserve` after triggering（只触发一次）
 - 用 `.reveal-d1` ~ `.reveal-d5` 做 stagger（0.1s递增）
 - 尊重 `prefers-reduced-motion`
-- 选中文本高亮：`::selection { background: #F4D758; color: #1a1a1a; }`
+- 选中文本高亮：`::selection { background: #F6C55F; color: #1a1a1a; }`
 
 ### 动效原则
 - **只用 opacity + transform**，不要animate layout属性
